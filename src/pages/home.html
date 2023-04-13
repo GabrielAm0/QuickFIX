@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quick Fix</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="shadow">
+        <div class="logo">
+          <a href="home.html"><img src=../img/logo.svg></a>
+        </div>
+        <div class="nav-info">
+          <a href="home.html"><img class="log-svg" src=../img/boneco.svg></a>
+
+          <!-- <h1 class="titulo">Quick Fix</h1> -->
+        </div>
+
+        <div style="display: flex">
+          <h3 style="margin-right: 15px">
+            <a class="link" href="perfil.html">Conta</a>
+          </h3>
+          <h3><a style="color: red" class="link" href="login.html">Sair</a></h3>
+        </div>
+      </header>
+
+      <main class="default-grid">
+        <section class="info-form display shadow">
+          <h1 class="box-title">Busca</h1>
+          <form id="searchForm" action="">
+            <div class="field">
+              <label for="jobCity">Cidade</label>
+              <select name="jobCity" id="jobCity">
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="jobType">Tipo do serviço</label>
+              <select name="jobType" id="jobType">
+                <option value="Serviços Gerais">Serviços Gerais</option>
+                <option value="Eletrônico">Eletrônico</option>
+                <option value="Mecânico">Mecânico</option>
+                <option value="Serviços domésticos">Serviços domésticos</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="jobMaxPrice">Oferta Máxima</label>
+              <input
+                name="jobMaxPrice"
+                id="jobMaxPrice"
+                type="number"
+                placeholder="R$ 00,00"
+                min="0"
+              />
+            </div>
+            <input id="submit-btn" type="submit" />
+            <p id="limpar-filtros">⨉ Limpar Filtros</p>
+          </form>
+        </section>
+
+        <section id="result" class="result display shadow">
+          <h1 class="box-title">Resultados</h1>
+        </section>
+
+        <section class="new-job display shadow">
+          <h1 class="box-title">Cadastrar novo serviços</h1>
+          <form action="" id="newJobForm">
+            <div class="field">
+              <label for="">Cidade</label>
+              <select name="newJobCity" id="newJobCity" required>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="">Tipo do serviço</label>
+              <select name="newJobType" id="newJobType" required>
+                <option value="Serviços Gerais">Serviços Gerais</option>
+                <option value="Eletrônico">Eletrônico</option>
+                <option value="Mecânico">Mecânico</option>
+                <option value="Serviços domésticos">Serviços domésticos</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="newJobPrice">Valor do serviço</label>
+              <input
+                value="newJobPrice"
+                id="newJobPrice"
+                type="number"
+                placeholder="R$ 00,00"
+                min="0"
+              />
+            </div>
+            <div class="field">
+              <label for="newJobDesc">Descrição do serviço</label>
+              <textarea
+                name="newJobDesc"
+                id="newJobDesc"
+                placeholder="Descreva em poucas palavras o seu serviço"
+                required
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="contactPhone">Telefone para contato</label>
+              <input
+                name="contactPhone"
+                id="contactPhone"
+                type="text"
+                placeholder="(00)9 0000-0000"
+              />
+            </div>
+            <button id="registerJob" name="newJobSubmit">Cadastrar</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="../js/forms.js"></script>
+    <script>
+      let logged = sessionStorage.getItem("logged");
+      if (!logged) {
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>QuickFix - Cadastro</title>
+  </head>
+  <body>
+    <div id="msgError"></div>
+    <div id="msgSuccess"></div>
+    <div class="cadastro">
+      <div class="login-header">
+        <img class="log-svg" src=../img/boneco.svg>
+        <h1>Cadastro</h1>
+      </div>
+
+      <form id="form-cadastro" action="">
+        <div class="login-field">
+          <label id="labelUsername" for="username">Nome de usuário</label>
+          <input
+            name="username"
+            id="username"
+            type="text"
+            placeholder="Usuário"
+            required
+          />
+        </div>
+
+        <div class="login-field">
+          <label id="labelAge" for="username">Idade</label>
+          <input
+            name="age"
+            id="age"
+            type="number"
+            placeholder="Idade"
+            required
+          />
+        </div>
+
+        <div class="login-field">
+          <label id="labelWork" for="username">Profissão</label>
+          <input
+            name="work"
+            id="profission"
+            type="tel"
+            placeholder="Profissão"
+            required
+          />
+        </div>
+
+        <div class="login-field">
+          <label id="labelPhone" for="username">Número de contato</label>
+          <input
+            name="cellphone"
+            id="contact-phone"
+            type="text"
+            placeholder="Telefone"
+            required
+          />
+        </div>
+
+        <div class="login-field">
+          <label id="labelPassword" for="password">Senha</label>
+          <input
+            name="password"
+            id="password"
+            type="password"
+            placeholder="Senha"
+            required
+          />
+        </div>
+      </form>
+
+      <button class="buttom-login" id="submit-cadastro">Cadastrar</button>
+
+      <div class="ou">
+        <p>Caso já tenha conta</p>
+      </div>
+
+      <a class="link" href="login.html"
+        ><div class="buttom-login" id="submit">Login</div></a
+      >
+    </div>
+    <script src="../js/cadastrar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Exemplo de uso das variáveis CSS: background-color: var(--blue) */
+  --black: #404040;
+  --gray: #40404050;
+  --blue1: #d5e0f2;
+  --blue2: #e5ebf4cc;
+  --blue3: #0084ff;
+}
+
+body {
+  background-color: var(--blue1);
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+header {
+  width: 100%;
+  color: var(--black);
+  background-color: var(--blue2);
+  height: 72px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px 0px rgba(84, 84, 84, 1);
+}
+
+.link{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.logo img {
+  height: 32px;
+}
+@media(max-width:414px){
+.logo img {
+  height: 18px;
+}
+}
+
+
+.log-svg{
+
+  height: 50px;
+  margin-right: 90px;
+
+}
+.link{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.puc {
+  display: flex;
+  margin: auto;
+}
+
+.logo2 {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.titulo {
+  margin-bottom: 15px;
+  width: 277px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  /* identical to box height */
+  color: #404040;
+  cursor: pointer;
+}
+
+.conta {
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.seta {
+  display: flex;
+  margin-top: 9px;
+}
+
+.parte-baixo {
+  margin-top: 20px;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.painel-esquerda {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 580px;
+}
+
+.painel-esquerda-prestador {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 470px;
+}
+
+.titulo-painel-1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 39px;
+  /* identical to box height */
+  color: #404040;
+}
+
+#titulo-esquerda {
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.titulo-esquerda-item {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.titulo-esquerda-subitem {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.titulo-painel-1-item {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 39px;
+  margin-left: 36px;
+  margin-top: 25px;
+  /* identical to box height */
+
+  color: #404040;
+}
+
+.item {
+  display: inline-flex;
+}
+.seta1 {
+  margin-top: 83px;
+  margin-left: 3px;
+}
+
+.seta2 {
+  margin-top: 83px;
+  margin-left: -5px;
+}
+
+.seta3 {
+  margin-top: 83px;
+  margin-left: -40px;
+}
+.seta4 {
+  margin-top: 83px;
+  margin-left: -15px;
+}
+
+.itens {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.atualizar {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 10px;
+  border: none;
+}
+
+.painel-direita {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 35px;
+  width: 700px;
+  height: 660px;
+}
+
+.painel-direita-prestador {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 35px;
+  width: 700px;
+  height: 565px;
+}
+
+.titulo-painel-2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 39px;
+  margin: 0 auto;
+  /* identical to box height */
+  color: #404040;
+}
+
+.item-resultado {
+  border: 1px solid black;
+  display: grid;
+  justify-content: center;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0px;
+  border-radius: 10px;
+  padding: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.titulo-painel-2-item {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 39px;
+
+  /* identical to box height */
+  color: #404040;
+}
+
+.titulo-esquerda-subitem-painel2 {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.titulo-direita-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.bairro {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 250px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #00b433;
+}
+
+.seta-item {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+.seta-item-prestador {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin-left: -58px;
+}
+
+.foto-perfil {
+  height: 150px;
+  width: 150px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+.painel {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 780px;
+}
+
+.icon {
+  height: 150px;
+}
+
+.inf2 {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.itens-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.voltar {
+  height: 25px;
+  width: 45px;
+  background-color: #cddcf5;
+  border-radius: 5px;
+  border: 1px solid #6c727d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+.salvar {
+  height: 25px;
+  width: 45px;
+  background-color: #84efc8;
+  border-radius: 5px;
+  border: 1px solid #6c727d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.botao {
+  display: flex;
+  left: 5px;
+  background-color: red;
+}
+
+.editar {
+  margin-top: 59px;
+  margin-left: 172px;
+  height: 15px;
+  width: 15px;
+}
+
+.sinalizar {
+  height: 120px;
+  width: 300px;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20%;
+
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  background-color: #0084ff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 10px;
+  border: solid 1px #003878;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.select {
+  background-color: #e0ebfc;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  color: #000000;
+}

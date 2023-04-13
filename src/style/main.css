@@ -1,0 +1,279 @@
+/* Resetando o CSS padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis Globais do projeto */
+:root {
+  /* Exemplo de uso das variáveis CSS: background-color: var(--blue) */
+  --black: #404040;
+  --gray: #40404050;
+  --blue1: #afbed7;
+  --blue2: #e5ebf4cc;
+  --blue3: #0084ff;
+}
+
+body {
+  background-color: var(--blue1);
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+/* Container que engloba toda a aplicação num tamanho máximo de 1240px */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  color: var(--black);
+  background-color: var(--blue2);
+  height: 72px;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px 0px rgba(84, 84, 84, 1);
+}
+
+.logo img {
+  height: 32px;
+}
+@media (max-width: 414px) {
+  .logo img {
+    height: 18px;
+  }
+}
+
+.log-svg {
+  height: 50px;
+  margin-right: 75px;
+}
+@media (max-width: 414px) {
+  .log-svg {
+    height: 50px;
+    margin-right: 35px;
+  }
+}
+.link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.painel {
+  background-color: #e5ebf4;
+  border-radius: 12px;
+  border: 0.5px solid #848fa1;
+  background: #e5ebf4;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  box-shadow: 10px 10px 10px 0px rgba(84, 84, 84, 1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+
+  /* width: 500px;
+  height: 780px; */
+}
+.icon {
+  height: 150px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itens-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inf2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.foto-perfil {
+  height: 150px;
+  width: 150px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 18px;
+}
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue3);
+}
+
+.info-form {
+  grid-area: info;
+  height: 550px;
+}
+
+.result {
+  grid-area: result;
+  height: 550px;
+}
+
+.new-job {
+  grid-area: newJob;
+}
+
+.default-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "info result result result result"
+    "newJob newJob newJob newJob newJob";
+  gap: 48px;
+  width: 100%;
+}
+
+.display {
+  background-color: var(--blue2);
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  border-radius: 10px;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.box-title {
+  border-bottom: 2px solid var(--blue3);
+  padding-bottom: 8px;
+  width: 70%;
+}
+.botao{
+display: flex;
+
+}
+
+@media (max-width: 768px) {
+  .default-grid {
+    grid-template-areas:
+      "info"
+      "result"
+      "newJob";
+  }
+}
+
+form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.field input,
+select,
+textarea {
+  padding: 8px 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: large;
+  color: gray;
+  border-bottom: 2px solid var(--blue3);
+}
+
+#submit-btn,
+#registerJob {
+  width: 100%;
+  padding: 12px 32px;
+  border: 2px solid var(--blue3);
+  background-color: var(--blue3);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-size: medium;
+  font-weight: 600;
+}
+
+#submit-btn:hover {
+  background-color: white;
+  color: var(--blue3);
+  border: 2px solid var(--blue3);
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  width: 100%;
+  border: 2px solid var(--blue3);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  max-height: 200px;
+  margin-top: 16px;
+}
+
+.result-card:hover {
+  background-color: var(--blue3);
+  cursor: pointer;
+  color: white;
+}
+
+.result-card .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+#limpar-filtros {
+  color: rgb(255, 79, 79);
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  padding-left: 8px;
+  cursor: pointer;
+}
